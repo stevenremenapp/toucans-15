@@ -1,0 +1,680 @@
+
+/*//////////////////////////////////////Global Styles///////////////////////////////////////*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;   /*to extend divs to the edge of window*/
+}
+
+.section-title {
+  text-align: center;
+  opacity: 0.80;
+
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 160px;
+  background-color: #55c0ec;
+  margin: 5px auto;
+  bottom: 0px;
+  transform: translateY(-280%);
+
+}
+
+
+a { color: inherit; }
+
+p{
+  color:#3f3f3f;
+
+}
+
+
+
+/*//////////////////////////////////////Global Styles///////////////////////////////////////*/
+
+
+
+
+/*//////////////////////////////////////Header///////////////////////////////////////////////*/
+
+.nav-header {
+  background-color: #40596b;
+  width: 100%;
+  padding: 1.15rem 0;
+  text-align: center;
+}
+
+.nav-header a:link,
+.nav-header a:visited {
+  text-decoration: none;
+  color: #ffd05a;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  display: inline-block;
+  transition: color .3s;
+  margin-right: 0.6rem;
+}
+
+.nav-header a:hover,
+.nav-header a:active {
+  color: #fff;
+}
+
+.nav-header a:last-child {
+  margin-right: 0;
+}
+
+/*//////////////////////////////////////Hero///////////////////////////////////////*/
+#home{
+  height: 495px;
+  background-color: #55c0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-div{
+  height: 432px;
+  flex-basis: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-description{
+  display: flex;
+  height: 280px;
+  flex-basis: 548px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  font-family: "Signika", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-description-tickybot{
+  font-size: 4.75rem;
+  font-weight: 300;
+  margin: 0px;
+  color: #244D5E;
+
+}
+
+#hero-description-content{
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*#hero-description-slack{
+  background-color: blue;
+}*/
+
+#img-div{
+  display: flex;
+  height: 400px;
+  flex-basis: 548px;
+  margin: 1rem;
+  justify-content: center;
+}
+/*//////////////////////////////////////End of Hero///////////////////////////////////////*/
+
+
+/*//////////////////////////////////////What is TickyBot///////////////////////////////////////*/
+.what-is-container{
+	display: grid;
+	font-family: "Signika", sans-serif;
+	padding: 0 1rem;
+	background-color: #fafafa;
+  width: auto;
+  font-size: 1.25rem;
+	margin: 0 auto;
+	grid-column-gap:20px;
+
+	grid-auto-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+	grid-template-areas:"title title"
+						 "p1 p2"
+						 "three three"
+}
+
+.what-is-title{
+	font-weight: 300;
+	letter-spacing: -.125rem;
+	line-height: 1.25;
+	grid-area: title;
+}
+
+.test{
+
+}
+.ticky{
+	font-weight: 600;
+
+}
+
+.what-is-p1{
+	grid-area:p1;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-left: 1em;
+	margin-bottom: 1rem;
+  margin-right: 1em;
+	margin-top: 0;
+}
+.what-is-p2{
+
+	grid-area:p2;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-bottom: 1rem;
+  margin-left: 1em;
+  margin-right: 1em;
+	margin-top: 0;
+
+}
+.what-is-p3{
+	grid-area: three;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	margin-left: 1em;
+	margin-top: 2em;
+	margin-right: 1em;
+	line-height: 1.5em;
+
+}
+
+/*//////////////////////////////////////What is TickyBot///////////////////////////////////////*/
+/*//////////////////////////////////////How It Works (beginning)///////////////////////////////////////*/
+
+.how-it-works-container{
+  background-color: #92DCAB;
+  font-family: "Signika";
+  font-size: 1.25rem;
+  padding-top: 6px;
+  padding-bottom: 40px;
+  /*display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-template-areas: "title"
+                       "body";*/
+}
+
+.how-it-works-title{
+  /*grid-area: title;*/
+  font-weight: 300;
+  letter-spacing: -.125rem;
+  line-height: 1.25;
+}
+
+.how-it-works-body-container{
+  /*grid-area: body;*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.how-it-works-body{
+  display: flex;
+  flex-direction: column;
+  background-color: #41596A;
+  flex-basis: 350px;
+  height: 490px;
+  margin: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.how-image {
+  width: 196px;
+  height: 230px;
+  margin: 40px;
+  padding-top: 24px;
+}
+
+.how-it-works-text{
+  background-color: white;
+  margin: 0px;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding: 20px;
+  height: 95px;
+  text-align: center;
+}
+
+.codeblock {
+  color: #DA1B40;
+  background-color: #eee;
+  font-family: "Courier New";
+  font-size: 12pt;
+  font-weight: 500;
+}
+/*//////////////////////////////////////How It Works (end)///////////////////////////////////////*/
+/*//////////////////////////////////////Start Using TickyBot///////////////////////////////////////*/
+
+.start-using-container{
+  /*display: grid;*/
+	font-family: "Signika", sans-serif;
+	padding: 0 1rem;
+  background-color: #fafafa;
+  width: auto;
+  font-size: 1.25rem;
+	margin: 0 auto;
+  border-top: white solid 1px;
+
+}
+
+.start-using-title{
+	font-weight: 300;
+	letter-spacing: -.125rem;
+  margin-bottom: 50px;
+
+
+}
+
+
+.flex1{
+	display: flex;
+	justify-content: center;
+}
+.flex2{
+	display: flex;
+	justify-content: center;
+}
+.flex3{
+	display: flex;
+	justify-content: center;
+}
+.start-using-p1{
+	/*display: flex;*/
+	font-weight: 300;
+	line-height: 1.5em;
+	justify-content: center;
+	text-align: center;
+  max-width: 600px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  /*margin: 190px;*/
+  margin-bottom: 4rem;
+  margin-top: 0;
+
+
+}
+
+
+
+/*Slack Button*/
+.start-using-img{
+    margin: 0 1rem 0 0;
+    padding: 0;
+    transition: transform .3s ease-in-out;
+    width: 2.5rem;
+    background-color: rgba(white, .9);
+    transform: scale(.98);
+
+}
+
+
+.start-using-img:hover {
+    transform: scale(1.5) rotate(18deg);
+}
+
+.btn1{
+  display: flex;
+  background-color: #40596b;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  line-height: 1;
+  justify-content: center;
+  padding: 1rem;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.75rem;
+  max-width: 300px;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  transition: background-color .3s ease-in-out,transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+  width: 100%;
+
+}
+
+.btn2{
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  line-height: 1;
+  justify-content: center;
+  padding: 2.25rem 3rem;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.75rem;
+  max-width: 300px;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  transition: background-color .3s ease-in-out,transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+  width: 100%;
+
+}
+
+.btn1:hover{
+  background-color: rgba(0,0,0,.7);
+  transform: scale(.98);
+  color: hsla(0,0%,100%,.9);
+}
+
+
+.ab-white .ac-white{
+  color: #40596b;
+  font-family: Signika,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+}
+
+.ab-white{
+  font-weight: 300;
+  color: #40596b;
+}
+
+.ac {
+  font-weight:600;
+}
+
+.ab{
+  font-weight: 300;
+  color:#e7eaec;
+  font-family: Signika,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.strong{
+  font-weight:600;
+}
+
+/*Slack Button*/
+
+
+.start-using-p2{
+	display: flex;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	font-weight: 300;
+  max-width: 600px;
+
+}
+
+/*//////////////////////////////////////Start Using TickyBot///////////////////////////////////////*/
+
+/*//////////////////////////////////////Footer///////////////////////////////////////*/
+
+footer{
+  display:flex;
+  flex-direction: column;
+  background-color: #40596b;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+
+}
+
+footer p{
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: hsla(0,0%,100%,.75);
+  margin: 0 auto;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.25rem;
+  max-width: 1200px;
+  width: 100%;
+
+/*  box-sizing: inherit;*/
+}
+
+.footer-p1{
+
+  font-size: 1rem;
+  justify-content: center;
+  color: #c6cdd3;
+  margin-bottom: .25rem;
+  font-size: .825rem;
+  line-height: 1.5;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+
+
+}
+
+
+
+.footer-p2{
+   display: flex;
+  justify-content: center;
+  color: #c6cdd3;
+  margin-bottom: .25rem;
+  font-size: .825rem;
+  line-height: 1.5;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+
+.footer-p3{
+  display: flex;
+  justify-content: center;
+  font-size: .825rem;
+  margin-bottom: .25rem;
+  color: #c6cdd3;
+  line-height: 1.5;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+/*//////////////////////////////////////Footer///////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for desktop */
+@media only screen and (min-width: 1200px){
+  /* all the css above should go here i think? */
+}
+
+/* for tablet-portrait */
+@media only screen and (max-width: 740px){
+
+#home{
+  height: 1000px;
+  background-color: #55c0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-div{
+  height: 950px;
+ /* flex-basis: 1200px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-description{
+  display: flex;
+  height: 280px;
+  flex-basis: 548px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  font-family: "Signika", sans-serif;
+  justify-content: center;
+ /* flex-wrap: wrap;*/
+  align-items: center;
+}
+
+#img-div{
+  display: flex;
+  height: 400px;
+  flex-basis: 548px;
+  margin: 1rem;
+  margin-bottom: 5em;
+  justify-content: center;
+}
+
+
+/*-------------*/
+
+#hero-div{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "one"
+                        "two"
+                        "three"
+                        "four"
+}
+
+
+
+#hero-description-tickybot{
+  grid-area:one;
+}
+
+#hero-description-content{
+  grid-area:two;
+}
+
+#hero-description-slack{
+ grid-area:three;
+}
+
+#img-div{
+  grid-area:four;
+}
+
+
+
+
+  .what-is-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "title"
+                          "p1"
+                          "p2"
+                          "three"
+  }
+
+    .what-is-p1{
+         margin-bottom: 60px;
+    }
+
+     .what-is-p2{
+
+    }
+
+     .what-is-p3{
+      margin-bottom:56px;
+    }
+
+    .start-using-p1{
+        margin-left:20px;
+        text-align: center;
+        margin-right:20px;
+    }
+    .start-using-p2{
+        margin-left:20px;
+        text-align: center;
+        margin-right:20px;
+    }
+
+/* for phone ---- changed to 400px */
+@media only screen and (max-width: 400px){
+
+    .section-title {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    #home{
+      height: 850px;
+    }
+
+    #hero-div{
+      height: 800px;
+    }
+
+    #hero-description {
+      margin-top: 0;
+    }
+
+    #hero-description-content {
+      font-size: 1.65rem;
+      margin: 1.75rem 1.75rem;
+    }
+
+
+    #img-div{
+      margin: 0;
+      margin-bottom: 0;
+    }
+
+    #robot-img {
+      width: 90%;
+      height: 90%;
+    }
+
+
+    .how-it-works-body {
+      margin: 2rem 1.25rem;
+    }
+
+    .how-it-works-body:first-child {
+      margin-top: 0.5rem;
+    }
+
+    .final-text {
+      padding-bottom: 3rem;
+    }
+
+    .start-using-p1 {
+      margin-left: 0.55rem;
+      margin-right: 0.55rem;
+    }
+
+    footer {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+}
