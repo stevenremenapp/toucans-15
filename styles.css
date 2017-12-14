@@ -629,6 +629,10 @@ footer p{
       margin: 1.75rem 1.75rem;
     }
 
+    .btn1 {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
 
     #img-div{
       margin: 0;
