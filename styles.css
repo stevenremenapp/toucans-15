@@ -365,7 +365,7 @@ p{
   color: hsla(0,0%,100%,.9);
 }
 
-.btn2:hover {
+.white-btn:hover {
   /*fill in more here! :) that background color isn't accurate, just a filler */
   background-color: #f2f2f2;
 }
