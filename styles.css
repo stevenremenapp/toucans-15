@@ -92,7 +92,7 @@ p{
 
 #hero-description{
   display: flex;
-  height: 280px;
+  /*height: 280px;*/
   flex-basis: 548px;
   display: flex;
   flex-direction: column;
@@ -627,9 +627,9 @@ footer p{
       margin-right: 2rem;
     }
 
-    .btn2 {
+    /*.btn2 {
       padding: 1.25rem 3.5rem;
-    }
+    }*/
 
     #home{
       height: 940px;
