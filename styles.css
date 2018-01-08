@@ -721,6 +721,11 @@ being operable when it's not visible*/
           animation-delay: 1.8s;
 }
 
+.twoHiW {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
 /*Hide How it Works Cards until scrolled*/
 
 .hidden {
