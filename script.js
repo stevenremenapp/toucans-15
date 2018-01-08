@@ -36,10 +36,10 @@ function topFunction() {
 
 $(window).scroll(function() {
   $('.hidden').each(function() {
-    var bottom_of_object = $(this).offset().top + 100;
+    var bottom_of_object = $(this).offset().top + 50;
     var bottom_of_window = $(window).scrollTop() + $(window).height();
     if (bottom_of_window > bottom_of_object) {
-      $(this).addClass("animate");
+      $(this).addClass("animateHiW");
       $(this).addClass("fadeInDownImages");
     }
   })
